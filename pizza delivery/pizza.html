@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+    <div id="homepage">
+        <div id="homepageimg">
+            <h1>Pizza <span>Wings</span></h1>
+            <img src="photos/homeimg.png" id="homeimg">
+        </div>
+        <div id="resthome">
+            <p><span>Delicious pizza at your door steps</span><br>
+            Craving for a slice of cheesy goodness? get our pizza wings for pepping hot
+             pies delivered at right to your door steps</p>
+             <button id="Order" onclick="openLogin()">Order now</button>
+        </div>
+    </div>
+    <!--------login------->
+    <img src="photos/backgroud .png" class="background">
+    <div id="loginpage">
+        <img src="photos/transparent logo.png" class="logo">
+        <div id="loginwindow">
+            <p>login</p>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="text" id="loginPassword" placeholder="Password">
+            <button onclick="LoginMain()">login</button>
+            <a id="openSignup">don't have an account try signup</a>
+        </div>
+    </div>
+    <!----------singup-------->
+    <div id="signuppage">
+        <img src="photos/transparent logo.png" class="logo">
+        <div id="signup">
+            <p>Signup</p>
+            <input type="text" id="signupUsername" placeholder="Username">
+            <input type="text" id="signupPassword" placeholder="Password">
+            <button onclick="Signup()">Signup</button>
+            <a id="openLogin">Try to login</a>
+        </div>
+    </div>
+    <!-----------menu-------->
+    <div id="menu">
+        <h1>Pizza wings</h1>
+        <p1>MENU</p1>
+        <div id="vegmenu">
+            <p>Veg</p>
+            <!---------cheesecorn--------->
+            <div id="cheesecorn">
+                <div id="cheesecornimgcost">
+                    <img src="photos/cheese corn.png" id="cheesecornimg">
+                    <p2 id="cost">199</p2>
+                </div>
+                <div id="cheesecorndet">
+                    <p>Cheese corn</p>
+                    <input type="text" id="numberofpizza" placeholder="no.of pizza">
+                    <button>add to cart</button>
+                </div>
+            </div>
+            <!-----------vegfarmhouse========-->
+            <div id="vegfarmhouse">
+                <div id="vegfarmhouseimgcost">
+                    <img src="photos/veg farmhouse.png" id="vegfarmhouseimg">
+                    <p2 id="cost">229</p2>
+                </div>
+                <div id="vegfarmhousedet">
+                    <p>Veg farmhouse</p>
+                    <input type="text" id="numberofpizza" placeholder="no.of pizza">
+                    <button onclick="saveItem()">add to cart</button>
+                </div>
+            </div>
+            <!-------margherita------->
+            <div id="margherita">
+                <div id="margheritaimgcost">
+                    <img src="photos/margherita.jpg" id="margheritaimg">
+                    <p2 id="cost">209</p2>
+                </div>
+                <div id="margheritadet">
+                    <p>Cheese Margherita</p>
+                    <input type="text" id="numberofpizza" placeholder="no.of pizza">
+                    <button onclick="saveItem()">add to cart</button>
+                </div>
+            </div>
+            <!--peppypanner-->
+            <div id="peppypanner">
+                <div id="peppypannerimgcost">
+                    <img src="photos/peppy panner.png" id="peppypannerimg">
+                    <p2 id="cost">249</p2>
+                </div>
+                <div id="peppypannerdet">
+                    <p>Peppy Panner</p>
+                    <input type="text" id="numberofpizza" placeholder="no.of pizza">
+                    <button onclick="saveItem()">add to cart</button>
+                </div>
+            </div>
+            <!--pennertikka-->
+            <div id="pennertikka">
+                <div id="pennertikkaimgcost">
+                    <img src="photos/paneer tikka.png" id="pennertikkaimg">
+                    <p2 id="cost">249</p2>
+                </div>
+                <div id="pennertikkadet">
+                    <p>Panner tikka</p>
+                    <input type="text" id="numberofpizza" placeholder="no.of pizza">
+                    <button onclick="saveItem()">add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div id="nonveg">
+            <p>Non-veg</p>
+            <!--pepperoni-->
+            <div id="pepperoni">
+                <div id="pepperoniimgcost">
+                    <img src="photos/pepperoni.png" id="pepperoniimg">
+                    <p2 id="cost">229</p2>
+                </div>
+                <div id="pepperonidet">
+                    <p>Pepperoni</p>
+                    <input type="text" id="numberofpizza" placeholder="no.of pizza">
+                    <button onclick="saveItem()">add to cart</button>
+                </div>
+            </div>
+            <!--chickengoldendelight-->
+            <div id="chickengoldendelight">
+                <div id="chickengoldendelightimgcost">
+                    <img src="photos/chicken golden delight.png" id="chickengoldendelightimg">
+                    <p2 id="cost">269</p2>
+                </div>
+                <div id="chickengoldendelightdet">
+                    <p>Chicken golden delight</p>
+                    <input type="text" id="numberofpizza" placeholder="no.of pizza">
+                    <button onclick="saveItem()">add to cart</button>
+                </div>
+            </div>
+            <!--chickensupreme-->
+            <div id="chickensupreme">
+                <div id="chickensupremeimgcost">
+                    <img src="photos/chicken supreme.png" id="chickensupremeimg">
+                    <p2 id="cost">259</p2>
+                </div>
+                <div id="chickensupremedet">
+                    <p>Chicken supreme</p>
+                    <input type="text" id="numberofpizza" placeholder="no.of pizza">
+                    <button onclick="saveItem()">add to cart</button>
+                </div>
+            </div>
+            <!--chickentikka-->
+            <div id="chickentikka">
+                <div id="chickentikkaimgcost">
+                    <img src="photos/chicken tikka.png" id="chickentikkaimg">
+                    <p2 id="cost">259</p2>
+                </div>
+                <div id="Chickentikkadet">
+                    <p>Chicken tikka</p>
+                    <input type="text" id="numberofpizza" placeholder="no.of pizza">
+                    <button onclick="saveItem()">add to cart</button>
+                </div>
+            </div>
+            <!--chickenpepperbbq-->
+            <div id="chickenpepperbbq">
+                <div id="chickenpepperbbqimgcost">
+                    <img src="photos/pepper bbq.png" id="chickenpepperbbqimg">
+                    <p2 id="cost">279</p2>
+                </div>
+                <div id="chickenpepperbbqdet">
+                    <p>Chicken pepper BBQ</p>
+                    <input type="text" id="numberofpizza" placeholder="no.of pizza">
+                    <button onclick="saveItem()">add to cart</button>
+                </div>
+            </div>
+        </div>
+        <button id="Checkout" onclick="saveMenu()">Checkout-></button>
+    </div>
+    <div id="Address">
+        <div id="addressinputs">
+            <input type="text" id="Name" placeholder="Full Name">
+            <input type="text" id="MobileNumber" placeholder="Mobile Number">
+            <input type="text" id="H.no" placeholder="Flat/H.no,Building,company">
+            <input type="text" id="Area" placeholder="Area,Street,Sector,village">
+            <input type="text" id="Landmark" placeholder="Landmark">
+            <input type="text" id="pincode" placeholder="6-digit pincode">
+            <button id="addAddress">Add Address</button>
+            <button id="billing" onclick="billing()">continue to pay</button>
+        </div>
+    </div>
+    <div id="billingpage">
+        <p id="bill">Bill:</p>
+        <button id="pay">pay</button>
+    </div>
+    <script>
+        function openLogin(){
+            document.getElementById('Address').style.display = 'none';
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('signuppage').style.display = 'none';
+            document.getElementById('loginpage').style.display = 'block';
+            document.getElementById('billingpage').style.display='none';
+            document.getElementById('homepage').style.display ='none'
+        }
+        document.getElementById('openSignup').addEventListener('click', function () {
+        document.getElementById('signuppage').style.display = 'block';
+        document.getElementById('loginpage').style.display = 'none';
+        document.getElementById('homepage').style.display ='none'
+    });
+
+    document.getElementById('openLogin').addEventListener('click', function () {
+        document.getElementById('signuppage').style.display = 'none';
+        document.getElementById('loginpage').style.display = 'block';
+        document.getElementById('homepage').style.display ='none'
+    });
+
+    function Signup() {
+        var usernameSignup = document.getElementById('signupUsername').value;
+        var passwordSignup = document.getElementById('signupPassword').value;
+        localStorage.setItem('usernameSignup', usernameSignup);
+        localStorage.setItem('passwordSignup', passwordSignup);
+    }
+
+    function LoginMain() {
+        var usernameLogin = document.getElementById('loginUsername').value;
+        var passwordLogin = document.getElementById('loginPassword').value;
+        var savedUsername = localStorage.getItem('usernameSignup');
+        var savedPassword = localStorage.getItem('passwordSignup');
+        
+        if (usernameLogin === savedUsername && passwordLogin === savedPassword) {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('signuppage').style.display = 'none';
+            document.getElementById('loginpage').style.display = 'none';
+        } else {
+            alert("Invalid username or password");
+        }
+    }
+    function saveMenu(){
+        document.getElementById('Address').style.display = 'block';
+        document.getElementById('menu').style.display = 'none';
+        document.getElementById('signuppage').style.display = 'none';
+        document.getElementById('loginpage').style.display = 'none';
+        document.getElementById('homepage').style.display ='none'
+    }
+    function billing(){
+        document.getElementById('Address').style.display = 'none';
+        document.getElementById('menu').style.display = 'none';
+        document.getElementById('signuppage').style.display = 'none';
+        document.getElementById('loginpage').style.display = 'none';
+        document.getElementById('billingpage').style.display='block';
+        document.getElementById('homepage').style.display ='none'
+    }
+
+
+    function saveItem(){
+        let total = 0;
+        const numberofpizzas = document.querySelectorAll("#numberofpizza");
+        const prices = document.querySelectorAll("#cost");
+
+        numberofpizzas.forEach((numberofpizza, index) => {
+            const quantity = parseFloat(numberofpizza.value);
+            const price = parseFloat(prices[index].textContent);
+
+            if(!isNaN(quantity)&&!isNaN(price)){
+                total += (quantity*price);
+            }
+            document.getElementById('bill').innerText = 'Total bill would be: '+total;
+        });
+    }
+    </script>
+</body>
+</html>

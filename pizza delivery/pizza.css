@@ -1,0 +1,556 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;  
+}
+.background{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-attachment: fixed;
+    opacity: 50%;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+#homepage{
+    display: block;
+    background: #f0c9a9;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#homeimg{
+    right: 40px;
+    height: 80vh;
+    width: 80vh;
+}
+#homepageimg{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+#homepageimg h1{
+    font-family: sans-serif;
+    color: black;
+    font-size: 70px;
+}
+#homepageimg h1 span{
+    color: rgb(228, 11, 11);
+}
+#Order{
+    height: 100px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 200px;
+    background-color: #CD4B27;
+    border-radius: 15px;
+    font-size: 30px;
+    color: #fff;
+}
+#resthome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#resthome p span{
+    color:   rgb(228, 11, 11);
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#resthome p{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+#loginpage{
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+#loginwindow{
+    margin-top: 40px;
+    height: 60vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    background: #CD4B27;
+    justify-content:space-around;
+    border-radius: 10px;
+    opacity: 80%;
+    margin-left: 80vh;
+}
+#loginwindow p{
+    font-size: 30px;
+    font-weight: 12px;
+    text-align: center;
+}
+#loginwindow input{
+    width: 250px;
+    margin-left: 7%;
+    background: white;
+    opacity: 100%;
+    color: black;
+    height: 18px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+#loginwindow button{
+    width: 150px;
+    margin-left: 25%;
+    background-color: #f0c9a9;
+    color: black;
+}
+#loginwindow a{
+    margin-left: 17%;
+    cursor: pointer;
+}
+/*--signup--*/
+#signuppage{
+padding: 0;
+height: 100vh;
+width: 100vh;
+display: none;
+}
+#signup{
+    margin-top: 40px;
+    height: 60vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    background: #CD4B27;
+    justify-content:space-around;
+    border-radius: 10px;
+    opacity: 80%;
+    margin-left: 80vh;
+}
+#signup p{
+    font-size: 30px;
+    font-weight: 12px;
+    text-align: center;
+}
+#signup input{
+    width: 250px;
+    margin-left: 7%;
+    background: white;
+    opacity: 100%;
+    color: black;
+    height: 18px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+#signup button{
+    width: 150px;
+    margin-left: 25%;
+    background-color: #f0c9a9;
+    color: black;
+}
+#signup a{
+    margin-left: 40%;
+    cursor: pointer;
+
+}
+/*   main page  */
+#menu{
+    padding: 0;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+#cheesecornimg{
+    height: 200px;
+    width: 200px;
+}
+#cheesecorn{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #CD4B27;
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#menu h1{
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 12px;
+    margin-left: 30px;
+    color: #CD4B27;
+    text-decoration:underline;
+}
+#menu p1{
+    font-size: 30px;
+    margin-left: 10px;
+    text-decoration-line: underline;
+}
+#vegmenu p{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+#cheesecorndet p{
+    font-weight: 20px;
+    font-size: 30px;
+}
+#cheesecorndet button{
+    background-color: #f0c9a9;
+    font-size: 18px;
+    font-weight: 8px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+#vegfarmhouse p{
+    font-weight: 20px;
+    font-size: 30px;
+}
+#vegfarmhouse button{
+    background-color: #f0c9a9;
+    font-size: 18px;
+    font-weight: 8px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+#vegfarmhouseimg{
+    height: 200px;
+    width: 200px;
+}
+#vegfarmhouse{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #CD4B27;
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#margherita p{
+    font-weight: 20px;
+    font-size: 30px;
+}
+#margherita button{
+    background-color: #f0c9a9;
+    font-size: 18px;
+    font-weight: 8px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+#margheritaimg{
+    height: 200px;
+    width: 200px;
+}
+#margherita{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #CD4B27;
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#peppypanner p{
+    font-weight: 20px;
+    font-size: 30px;
+}
+#peppypanner button{
+    background-color: #f0c9a9;
+    font-size: 18px;
+    font-weight: 8px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+#peppypannerimg{
+    height: 200px;
+    width: 200px;
+}
+#peppypanner{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #CD4B27;
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#pennertikka p{
+    font-weight: 20px;
+    font-size: 30px;
+}
+#pennertikka button{
+    background-color: #f0c9a9;
+    font-size: 18px;
+    font-weight: 8px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+#pennertikkaimg{
+    height: 200px;
+    width: 200px;
+}
+#pennertikka{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #CD4B27;
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#nonveg p{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+#pepperoni p{
+    font-weight: 20px;
+    font-size: 30px;
+}
+#pepperoni button{
+    background-color: #f0c9a9;
+    font-size: 18px;
+    font-weight: 8px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+#pepperoniimg{
+    height: 200px;
+    width: 200px;
+}
+#pepperoni{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #CD4B27;
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#chickengoldendelight p{
+    font-weight: 20px;
+    font-size: 30px;
+}
+#chickengoldendelight button{
+    background-color: #f0c9a9;
+    font-size: 18px;
+    font-weight: 8px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+#chickengoldendelightimg{
+    height: 200px;
+    width: 200px;
+}
+#chickengoldendelight{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #CD4B27;
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#chickensupreme p{
+    font-weight: 20px;
+    font-size: 30px;
+}
+#chickensupreme button{
+    background-color: #f0c9a9;
+    font-size: 18px;
+    font-weight: 8px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+#chickensupremeimg{
+    height: 200px;
+    width: 200px;
+}
+#chickensupreme{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #CD4B27;
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#chickentikka p{
+    font-weight: 20px;
+    font-size: 30px;
+}
+#chickentikka button{
+    background-color: #f0c9a9;
+    font-size: 18px;
+    font-weight: 8px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+#chickentikkaimg{
+    height: 200px;
+    width: 200px;
+}
+#chickentikka{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #CD4B27;
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#chickenpepperbbq p{
+    font-weight: 20px;
+    font-size: 30px;
+}
+#chickenpepperbbq button{
+    background-color: #f0c9a9;
+    font-size: 18px;
+    font-weight: 8px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+#chickenpepperbbqimg{
+    height: 200px;
+    width: 200px;
+}
+#chickenpepperbbq{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #CD4B27;
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#Checkout{
+    height: 50px;
+    width: 200px;
+    background-color: #CD4B27;
+    color: black;
+    margin-top: 80px;
+    margin-left: 20px;
+    font-size: 25px;
+    border-radius: 15px;
+}
+#numberofpizza{
+    height: 25px;
+    width: 100px;
+}
+/*------------Address--------*/
+#Address{
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+#addressinputs{
+    display: flex;
+    flex-direction: column;
+    background-color: #CD4B27;
+    height: 50vh;
+    width: 50vh;
+    padding: 20px 20px;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-left: 80vh;
+    margin-top: 100px;
+}
+#addressinputs input{
+    background-color: transparent;
+    height: 25px;
+    font-size: 16px;
+    color: white;
+}
+#addressinputs ::placeholder{
+    color: white;
+}
+#addAddress{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 100px;
+}
+#billing{
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 50px;
+}
+p2 {
+    font-size: 25px;
+}
+/*billing*/
+#billingpage{
+    display: none;
+}
+#billingpage p{
+    font-size: 40px;
+}
+#pay{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 100px;
+    background-color: #CD4B27;
+}
+/*for small screens*/
+@media (max-width: 767px) {
+    #loginwindow, #signup, #mainpage {
+        width: 90%;
+        margin-left: 5%; 
+    }
+
+    h1 {
+        margin-left: 5%; 
+        font-size: 24px; 
+    }
+
+    #loginwindow, #signup, #mainpage p {
+        font-size: 20px; 
+    }
+
+    #loginwindow input, #signup input {
+        width: 80%; 
+        margin-left: 10%; 
+    }
+
+    #loginwindow button, #signup button {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    #loginwindow a, #signup a {
+        margin-left: 30%;
+    }
+}
